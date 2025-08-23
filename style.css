@@ -6,26 +6,61 @@
     padding: 0;
 }
 
+/* nav.navbar, header.header, section.boxes, section.quote, section.sign-up, footer.end-page {
+    border: 3px solid #333;
+} */
+
 body {
     font-family: Arial, Verdana, Tahoma, sans-serif;
     min-height: 100vh;
-    margin:
+    display: flex;
+    flex-direction: column;
+}
+
+nav.navbar, header.header, section.boxes, section.quote, section.sign-up, footer.end-page {
+    flex: 1;
 }
 
 ul {
     list-style-type: none;
 }
 
-.navbar {
-    height: 60px;
-    background-color: grey;
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: blue;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
 }
 
 .navbar a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .navbar .logo {
@@ -38,9 +73,78 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 80%;
 }
 
-.navbar ul {
+.header .container {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
 }
+
+.boxes .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+.quote .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+.sign-up .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+.end-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+section.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+section.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.end-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+}
+
+section .big-box {
+    display: flex;
+    gap: 10px;
+}
+
