@@ -11,7 +11,7 @@
 } */
 
 body {
-    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-family: Roboto, Arial, Verdana, Tahoma;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,10 @@ nav.navbar {
     color: white;
 }
 
+img.border {
+    border: 5px solid #3882F6;
+}
+
 .navbar ul {
     display: flex;
     gap: 20px;
@@ -82,22 +86,40 @@ nav.navbar {
     align-items: center;
     height: 100%;
     width: 80%;
+    gap: 20px;
+}
+
+.header .space-out {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.header .space-out button {
+    max-width: 30%;
 }
 
 .boxes .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    gap: 20px;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 80%;
 }
 
-.quote .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
+h1.right-align {
+    align-self: flex-end;
 }
 
 .sign-up .container {
@@ -106,6 +128,12 @@ nav.navbar {
     align-items: center;
     height: 100%;
     width: 80%;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 20px;
+    gap: 200px;
 }
 
 .end-page .container {
@@ -114,6 +142,7 @@ nav.navbar {
     align-items: center;
     height: 100%;
     width: 80%;
+    font-size: 5px;
 }
 
 section.boxes {
@@ -129,6 +158,11 @@ section.quote {
     background-color: #E5E7EB;
 }
 
+section .container .call-to-action {
+    display: flex;
+    flex-direction: column;
+}
+
 section.sign-up {
     display: flex;
     justify-content: center;
@@ -141,6 +175,7 @@ footer.end-page {
     align-items: center;
     background-color: #1F2937;
     color: white;
+    max-height: 30px;
 }
 
 section .big-box {
